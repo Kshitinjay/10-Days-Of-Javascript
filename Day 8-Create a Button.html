@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+        <style type="text/css">
+        	#btn {
+    			height: 48px;
+                font-size: 24px;
+			}
+        </style>
+    </head>
+    <body>
+        <div ></div>
+        <button id="btn" id="pp">1</button>
+        <script>
+        	var btn = document.getElementById("btn");
+    		btn.addEventListener("click",function() {
+        	var current_value = this.innerHTML;
+        	this.innerHTML = parseInt(current_value)+1;
+    		});
+        </script>
+    </body>
+</html>
